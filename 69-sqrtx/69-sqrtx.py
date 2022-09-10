@@ -1,3 +1,6 @@
 class Solution:
     def mySqrt(self, x: int) -> int:
-        return floor(x**(1/2))
+        i = 1
+        while i*i <= x:
+            i += 1
+        return i-1
